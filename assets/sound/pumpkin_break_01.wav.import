@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pumpkin_break_01.wav-863b00fc684f0fdbd68fd2b173ed1c92.sample"
+
+[deps]
+
+source_file="res://assets/sound/pumpkin_break_01.wav"
+source_md5="0f0ebef33ed1c31d906043ccee3a14b7"
+
+dest_files=[ "res://.import/pumpkin_break_01.wav-863b00fc684f0fdbd68fd2b173ed1c92.sample" ]
+dest_md5="965b1b9ab0cc0170f585f1ab28309d34"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

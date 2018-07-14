@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/spaceship.wav-69f63b558c149f6d0067cf750a1f686d.sample"
+
+[deps]
+
+source_file="res://assets/sound/spaceship.wav"
+source_md5="e73f774484094e8c4c50ef2aa8e3e0f3"
+
+dest_files=[ "res://.import/spaceship.wav-69f63b558c149f6d0067cf750a1f686d.sample" ]
+dest_md5="9dbc51a846f2bdd2d3c5ce3bdbca7a76"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/laser7.wav-6e43806636d684954e2d312026773bbb.sample"
+
+[deps]
+
+source_file="res://assets/sound/laser7.wav"
+source_md5="e5790c834459630e8d5943157331590a"
+
+dest_files=[ "res://.import/laser7.wav-6e43806636d684954e2d312026773bbb.sample" ]
+dest_md5="2eb970af03fbad1a437d8266e0b0d833"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ScatterNoise1.wav-7649f76f6f5e375edc0342b73d29cfed.sample"
+
+[deps]
+
+source_file="res://assets/sound/ScatterNoise1.wav"
+source_md5="d371b4bf5a6672c8fd6ea9d74ba43fb3"
+
+dest_files=[ "res://.import/ScatterNoise1.wav-7649f76f6f5e375edc0342b73d29cfed.sample" ]
+dest_md5="8919ce5ace4eb5ae8dcb4067b4f3ebd5"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
