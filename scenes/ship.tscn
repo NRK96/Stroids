@@ -1,0 +1,188 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://scripts/ship.gd" type="Script" id=1]
+[ext_resource path="res://assets/images/bubble_explo1.png" type="Texture" id=2]
+[ext_resource path="res://assets/images/improvedShip.png" type="Texture" id=3]
+[ext_resource path="res://assets/images/bubble_explo2.png" type="Texture" id=4]
+[ext_resource path="res://assets/images/bubble_explo3.png" type="Texture" id=5]
+[ext_resource path="res://assets/images/bubble_explo4.png" type="Texture" id=6]
+[ext_resource path="res://assets/images/bubble_explo5.png" type="Texture" id=7]
+[ext_resource path="res://assets/images/bubble_explo6.png" type="Texture" id=8]
+[ext_resource path="res://assets/images/bubble_explo7.png" type="Texture" id=9]
+[ext_resource path="res://assets/images/bubble_explo8.png" type="Texture" id=10]
+[ext_resource path="res://assets/images/bubble_explo9.png" type="Texture" id=11]
+[ext_resource path="res://assets/images/bubble_explo10.png" type="Texture" id=12]
+
+[sub_resource type="CircleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 2.87758
+
+[node name="ship" type="RigidBody2D"]
+
+editor/display_folded = true
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+mode = 0
+mass = 1.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+linear_velocity = Vector2( 0, 0 )
+linear_damp = -1.0
+angular_velocity = 0.0
+angular_damp = -1.0
+script = ExtResource( 1 )
+_sections_unfolded = [ "Angular", "Transform" ]
+engine_thrust = 100
+spin_thrust = 850
+
+[node name="collision shape" type="CollisionShape2D" parent="." index="0"]
+
+position = Vector2( -6.68051, -0.690812 )
+rotation = 1.5708
+scale = Vector2( 6.11376, 4.27227 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="collision shape 2" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( 0.319486, 0.309094 )
+rotation = 1.5708
+scale = Vector2( 2.04164, 8.59197 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="collision shape 3" type="CollisionShape2D" parent="." index="2"]
+
+position = Vector2( -14.6805, 0.0060997 )
+rotation = 1.5708
+scale = Vector2( 9.10238, 3.01092 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="appearance" type="Node2D" parent="." index="3"]
+
+editor/display_folded = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="engine" type="Sprite" parent="appearance" index="0"]
+
+visible = false
+position = Vector2( -26, 0 )
+texture = ExtResource( 2 )
+
+[node name="left-engine" type="Sprite" parent="appearance" index="1"]
+
+visible = false
+position = Vector2( 8, 6 )
+texture = ExtResource( 2 )
+
+[node name="right-engine" type="Sprite" parent="appearance" index="2"]
+
+visible = false
+position = Vector2( 7, -6 )
+texture = ExtResource( 2 )
+
+[node name="ship" type="Sprite" parent="appearance" index="3"]
+
+rotation = 1.5708
+scale = Vector2( 0.05, 0.05 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="explode 1" type="Sprite" parent="appearance" index="4"]
+
+visible = false
+position = Vector2( -5.00001, 0 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Animation", "Transform" ]
+
+[node name="explode 2" type="Sprite" parent="appearance" index="5"]
+
+visible = false
+position = Vector2( -5, 0 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 4 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="explode 3" type="Sprite" parent="appearance" index="6"]
+
+visible = false
+position = Vector2( -17, 12.9999 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="explode 4" type="Sprite" parent="appearance" index="7"]
+
+visible = false
+position = Vector2( -8, 0.999995 )
+rotation = 0.663225
+scale = Vector2( 3, 3 )
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="explode 5" type="Sprite" parent="appearance" index="8"]
+
+visible = false
+position = Vector2( -8, 0 )
+rotation = 0.663225
+scale = Vector2( 3, 3 )
+texture = ExtResource( 7 )
+_sections_unfolded = [ "Material", "Transform" ]
+
+[node name="explode 6" type="Sprite" parent="appearance" index="9"]
+
+visible = false
+position = Vector2( -8, 0 )
+rotation = 0.663225
+scale = Vector2( 3, 3 )
+texture = ExtResource( 8 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="explode 7" type="Sprite" parent="appearance" index="10"]
+
+visible = false
+position = Vector2( -8, 0 )
+rotation = 0.663225
+scale = Vector2( 3, 3 )
+texture = ExtResource( 9 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="explode 8" type="Sprite" parent="appearance" index="11"]
+
+visible = false
+position = Vector2( -8, 0 )
+rotation = 0.663225
+scale = Vector2( 3, 3 )
+texture = ExtResource( 10 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="explode 9" type="Sprite" parent="appearance" index="12"]
+
+visible = false
+position = Vector2( -8, 0 )
+rotation = 0.663225
+scale = Vector2( 3, 3 )
+texture = ExtResource( 11 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="explode 10" type="Sprite" parent="appearance" index="13"]
+
+visible = false
+position = Vector2( -8, 0 )
+rotation = 0.663225
+scale = Vector2( 3, 3 )
+texture = ExtResource( 12 )
+_sections_unfolded = [ "Transform" ]
+
+

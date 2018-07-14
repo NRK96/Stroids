@@ -1,0 +1,453 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://scripts/main.gd" type="Script" id=1]
+[ext_resource path="res://scenes/stars.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/ship.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/sound/Chunky Explosion.wav" type="AudioStream" id=4]
+[ext_resource path="res://assets/sound/laser7.wav" type="AudioStream" id=5]
+[ext_resource path="res://assets/sound/ScatterNoise1.wav" type="AudioStream" id=6]
+[ext_resource path="res://scenes/asteroid.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/sound/pumpkin_break_01.wav" type="AudioStream" id=8]
+[ext_resource path="res://assets/sound/theme.wav" type="AudioStream" id=9]
+[ext_resource path="res://scripts/theme.gd" type="Script" id=10]
+[ext_resource path="res://scripts/score.gd" type="Script" id=11]
+[ext_resource path="res://scripts/lives.gd" type="Script" id=12]
+[ext_resource path="res://scripts/bonus-score.gd" type="Script" id=13]
+
+[node name="main" type="Node"]
+
+script = ExtResource( 1 )
+
+[node name="bg" type="Node2D" parent="." index="0"]
+
+editor/display_folded = true
+
+[node name="star cluster2" type="Node2D" parent="bg" index="0"]
+
+editor/display_folded = true
+position = Vector2( 1105, 1044 )
+rotation = -3.14159
+_sections_unfolded = [ "Transform" ]
+
+[node name="stars" parent="bg/star cluster2" index="0" instance=ExtResource( 2 )]
+
+[node name="stars2" parent="bg/star cluster2" index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 619, 24 )
+
+[node name="stars3" parent="bg/star cluster2" index="2" instance=ExtResource( 2 )]
+
+position = Vector2( 832, 468 )
+scale = Vector2( 1, -1 )
+
+[node name="stars4" parent="bg/star cluster2" index="3" instance=ExtResource( 2 )]
+
+position = Vector2( 833, -113 )
+
+[node name="stars5" parent="bg/star cluster2" index="4" instance=ExtResource( 2 )]
+
+position = Vector2( 38, 30 )
+
+[node name="stars6" parent="bg/star cluster2" index="5" instance=ExtResource( 2 )]
+
+position = Vector2( 237, -12 )
+rotation = -0.349066
+
+[node name="stars7" parent="bg/star cluster2" index="6" instance=ExtResource( 2 )]
+
+position = Vector2( 104, 324 )
+rotation = -0.523599
+
+[node name="star cluster3" type="Node2D" parent="bg" index="1"]
+
+editor/display_folded = true
+position = Vector2( -967, 146.931 )
+scale = Vector2( 1, 1.00217 )
+
+[node name="stars" parent="bg/star cluster3" index="0" instance=ExtResource( 2 )]
+
+[node name="stars2" parent="bg/star cluster3" index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 619, 24 )
+
+[node name="stars3" parent="bg/star cluster3" index="2" instance=ExtResource( 2 )]
+
+position = Vector2( 832, 468 )
+scale = Vector2( 1, -1 )
+
+[node name="stars4" parent="bg/star cluster3" index="3" instance=ExtResource( 2 )]
+
+position = Vector2( 833, -113 )
+
+[node name="stars5" parent="bg/star cluster3" index="4" instance=ExtResource( 2 )]
+
+position = Vector2( 38, 30 )
+
+[node name="stars6" parent="bg/star cluster3" index="5" instance=ExtResource( 2 )]
+
+position = Vector2( 237, -12 )
+rotation = -0.349066
+
+[node name="stars7" parent="bg/star cluster3" index="6" instance=ExtResource( 2 )]
+
+position = Vector2( 104, 324 )
+rotation = -0.523599
+
+[node name="star cluster4" type="Node2D" parent="bg" index="2"]
+
+editor/display_folded = true
+position = Vector2( -368, -544 )
+
+[node name="stars" parent="bg/star cluster4" index="0" instance=ExtResource( 2 )]
+
+[node name="stars2" parent="bg/star cluster4" index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 619, 24 )
+
+[node name="stars3" parent="bg/star cluster4" index="2" instance=ExtResource( 2 )]
+
+position = Vector2( 832, 468 )
+scale = Vector2( 1, -1 )
+
+[node name="stars4" parent="bg/star cluster4" index="3" instance=ExtResource( 2 )]
+
+position = Vector2( 833, -113 )
+
+[node name="stars5" parent="bg/star cluster4" index="4" instance=ExtResource( 2 )]
+
+position = Vector2( 38, 30 )
+
+[node name="stars6" parent="bg/star cluster4" index="5" instance=ExtResource( 2 )]
+
+position = Vector2( 237, -12 )
+rotation = -0.349066
+
+[node name="stars7" parent="bg/star cluster4" index="6" instance=ExtResource( 2 )]
+
+position = Vector2( 104, 324 )
+rotation = -0.523599
+
+[node name="star cluster5" type="Node2D" parent="bg" index="3"]
+
+editor/display_folded = true
+position = Vector2( -1006, -182 )
+
+[node name="stars" parent="bg/star cluster5" index="0" instance=ExtResource( 2 )]
+
+[node name="stars2" parent="bg/star cluster5" index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 619, 24 )
+
+[node name="stars3" parent="bg/star cluster5" index="2" instance=ExtResource( 2 )]
+
+position = Vector2( 832, 468 )
+scale = Vector2( 1, -1 )
+
+[node name="stars4" parent="bg/star cluster5" index="3" instance=ExtResource( 2 )]
+
+position = Vector2( 833, -113 )
+
+[node name="stars5" parent="bg/star cluster5" index="4" instance=ExtResource( 2 )]
+
+position = Vector2( 38, 30 )
+
+[node name="stars6" parent="bg/star cluster5" index="5" instance=ExtResource( 2 )]
+
+position = Vector2( 237, -12 )
+rotation = -0.349066
+
+[node name="stars7" parent="bg/star cluster5" index="6" instance=ExtResource( 2 )]
+
+position = Vector2( 104, 324 )
+rotation = -0.523599
+
+[node name="star cluster7" type="Node2D" parent="bg" index="4"]
+
+position = Vector2( 1074, 430 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="stars" parent="bg/star cluster7" index="0" instance=ExtResource( 2 )]
+
+[node name="stars2" parent="bg/star cluster7" index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 619, 24 )
+
+[node name="stars3" parent="bg/star cluster7" index="2" instance=ExtResource( 2 )]
+
+position = Vector2( 832, 468 )
+scale = Vector2( 1, -1 )
+
+[node name="stars4" parent="bg/star cluster7" index="3" instance=ExtResource( 2 )]
+
+position = Vector2( 833, -113 )
+
+[node name="stars5" parent="bg/star cluster7" index="4" instance=ExtResource( 2 )]
+
+position = Vector2( 38, 30 )
+
+[node name="stars6" parent="bg/star cluster7" index="5" instance=ExtResource( 2 )]
+
+position = Vector2( 237, -12 )
+rotation = -0.349066
+
+[node name="stars7" parent="bg/star cluster7" index="6" instance=ExtResource( 2 )]
+
+position = Vector2( 104, 324 )
+rotation = -0.523599
+
+[node name="star cluster8" type="Node2D" parent="bg" index="5"]
+
+editor/display_folded = true
+position = Vector2( 585, -579 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="stars" parent="bg/star cluster8" index="0" instance=ExtResource( 2 )]
+
+[node name="stars2" parent="bg/star cluster8" index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 619, 24 )
+
+[node name="stars3" parent="bg/star cluster8" index="2" instance=ExtResource( 2 )]
+
+position = Vector2( 832, 468 )
+scale = Vector2( 1, -1 )
+
+[node name="stars4" parent="bg/star cluster8" index="3" instance=ExtResource( 2 )]
+
+position = Vector2( 833, -113 )
+
+[node name="stars5" parent="bg/star cluster8" index="4" instance=ExtResource( 2 )]
+
+position = Vector2( 38, 30 )
+
+[node name="stars6" parent="bg/star cluster8" index="5" instance=ExtResource( 2 )]
+
+position = Vector2( 237, -12 )
+rotation = -0.349066
+
+[node name="stars7" parent="bg/star cluster8" index="6" instance=ExtResource( 2 )]
+
+position = Vector2( 104, 324 )
+rotation = -0.523599
+
+[node name="star cluster6" type="Node2D" parent="bg" index="6"]
+
+editor/display_folded = true
+position = Vector2( 1074, -158 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="stars" parent="bg/star cluster6" index="0" instance=ExtResource( 2 )]
+
+[node name="stars2" parent="bg/star cluster6" index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 619, 24 )
+
+[node name="stars3" parent="bg/star cluster6" index="2" instance=ExtResource( 2 )]
+
+position = Vector2( 832, 468 )
+scale = Vector2( 1, -1 )
+
+[node name="stars4" parent="bg/star cluster6" index="3" instance=ExtResource( 2 )]
+
+position = Vector2( 833, -113 )
+
+[node name="stars5" parent="bg/star cluster6" index="4" instance=ExtResource( 2 )]
+
+position = Vector2( 38, 30 )
+
+[node name="stars6" parent="bg/star cluster6" index="5" instance=ExtResource( 2 )]
+
+position = Vector2( 237, -12 )
+rotation = -0.349066
+
+[node name="stars7" parent="bg/star cluster6" index="6" instance=ExtResource( 2 )]
+
+position = Vector2( 104, 324 )
+rotation = -0.523599
+
+[node name="star cluster" type="Node2D" parent="bg" index="7"]
+
+[node name="stars" parent="bg/star cluster" index="0" instance=ExtResource( 2 )]
+
+[node name="stars2" parent="bg/star cluster" index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 619, 24 )
+
+[node name="stars3" parent="bg/star cluster" index="2" instance=ExtResource( 2 )]
+
+position = Vector2( 832, 468 )
+scale = Vector2( 1, -1 )
+
+[node name="stars4" parent="bg/star cluster" index="3" instance=ExtResource( 2 )]
+
+position = Vector2( 833, -113 )
+
+[node name="stars5" parent="bg/star cluster" index="4" instance=ExtResource( 2 )]
+
+position = Vector2( 38, 30 )
+
+[node name="stars6" parent="bg/star cluster" index="5" instance=ExtResource( 2 )]
+
+position = Vector2( 237, -12 )
+rotation = -0.349066
+
+[node name="stars7" parent="bg/star cluster" index="6" instance=ExtResource( 2 )]
+
+position = Vector2( 104, 324 )
+rotation = -0.523599
+
+[node name="ship" parent="." index="1" instance=ExtResource( 3 )]
+
+position = Vector2( 510, 300 )
+
+[node name="explosion" type="AudioStreamPlayer" parent="ship" index="4"]
+
+stream = ExtResource( 4 )
+volume_db = -5.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="laser" type="AudioStreamPlayer" parent="ship" index="5"]
+
+stream = ExtResource( 5 )
+volume_db = -15.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="thruster" type="AudioStreamPlayer" parent="ship" index="6"]
+
+stream = ExtResource( 6 )
+volume_db = -5.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="left-thruster" type="AudioStreamPlayer" parent="ship" index="7"]
+
+stream = ExtResource( 6 )
+volume_db = -5.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="right-thruster" type="AudioStreamPlayer" parent="ship" index="8"]
+
+stream = ExtResource( 6 )
+volume_db = -5.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="asteroid" parent="." index="2" instance=ExtResource( 7 )]
+
+position = Vector2( 251, 80 )
+
+[node name="asteroid2" parent="." index="3" instance=ExtResource( 7 )]
+
+position = Vector2( 76, 530 )
+
+[node name="asteroid3" parent="." index="4" instance=ExtResource( 7 )]
+
+position = Vector2( 945, 512 )
+
+[node name="break" type="AudioStreamPlayer" parent="." index="5"]
+
+stream = ExtResource( 8 )
+volume_db = -12.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="theme" type="AudioStreamPlayer" parent="." index="6"]
+
+stream = ExtResource( 9 )
+volume_db = 1.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+script = ExtResource( 10 )
+_sections_unfolded = [ "Pause" ]
+
+[node name="score" type="LineEdit" parent="." index="7"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 25.0
+margin_right = 125.0
+margin_bottom = 49.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+script = ExtResource( 11 )
+
+[node name="lives" type="LineEdit" parent="." index="8"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 49.0
+margin_right = 71.0
+margin_bottom = 73.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+script = ExtResource( 12 )
+
+[node name="bonus-score" type="LineEdit" parent="." index="9"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1.0
+margin_right = 176.0
+margin_bottom = 25.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+script = ExtResource( 13 )
+
+[connection signal="finished" from="ship/thruster" to="ship" method="_on_thruster_finished"]
+
+[connection signal="finished" from="ship/left-thruster" to="ship" method="_on_leftthruster_finished"]
+
+[connection signal="finished" from="ship/right-thruster" to="ship" method="_on_rightthruster_finished"]
+
+[connection signal="finished" from="theme" to="theme" method="_on_theme_finished"]
+
+

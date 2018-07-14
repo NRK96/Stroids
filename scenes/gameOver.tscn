@@ -1,0 +1,439 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://assets/Letters/Upper_G.png" type="Texture" id=1]
+[ext_resource path="res://assets/Letters/Lower_A.png" type="Texture" id=2]
+[ext_resource path="res://assets/Letters/Lower_M.png" type="Texture" id=3]
+[ext_resource path="res://assets/Letters/Lower_E.png" type="Texture" id=4]
+[ext_resource path="res://assets/Letters/Upper_O.png" type="Texture" id=5]
+[ext_resource path="res://assets/Letters/Lower_V.png" type="Texture" id=6]
+[ext_resource path="res://assets/Letters/Lower_R.png" type="Texture" id=7]
+[ext_resource path="res://scripts/Button.gd" type="Script" id=8]
+[ext_resource path="res://assets/Letters/Upper_T.png" type="Texture" id=9]
+[ext_resource path="res://assets/Letters/Lower_Y.png" type="Texture" id=10]
+[ext_resource path="res://assets/Letters/Upper_A.png" type="Texture" id=11]
+[ext_resource path="res://assets/Letters/Lower_G.png" type="Texture" id=12]
+[ext_resource path="res://assets/Letters/Lower_I.png" type="Texture" id=13]
+[ext_resource path="res://assets/Letters/Lower_N.png" type="Texture" id=14]
+[ext_resource path="res://assets/Letters/Upper_Q.png" type="Texture" id=15]
+[ext_resource path="res://assets/Letters/Lower_U.png" type="Texture" id=16]
+[ext_resource path="res://assets/Letters/Lower_T.png" type="Texture" id=17]
+[ext_resource path="res://assets/Letters/Upper_M.png" type="Texture" id=18]
+[ext_resource path="res://assets/Letters/Upper_C.png" type="Texture" id=19]
+[ext_resource path="res://assets/Letters/Lower_O.png" type="Texture" id=20]
+[ext_resource path="res://assets/Letters/Lower_L.png" type="Texture" id=21]
+[ext_resource path="res://assets/Letters/Lower_S.png" type="Texture" id=22]
+[ext_resource path="res://assets/sound/defeat.wav" type="AudioStream" id=23]
+[ext_resource path="res://scripts/theme.gd" type="Script" id=24]
+[ext_resource path="res://scripts/score.gd" type="Script" id=25]
+
+[node name="Node" type="Node"]
+
+[node name="Game Over" type="Node2D" parent="." index="0"]
+
+editor/display_folded = true
+position = Vector2( 360, 100 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="G" type="Sprite" parent="Game Over" index="0"]
+
+scale = Vector2( 1.25, 2 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="a" type="Sprite" parent="Game Over" index="1"]
+
+position = Vector2( 45, 0 )
+scale = Vector2( 1.25, 2 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="m" type="Sprite" parent="Game Over" index="2"]
+
+position = Vector2( 100, 0 )
+scale = Vector2( 1.25, 2 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="e" type="Sprite" parent="Game Over" index="3"]
+
+position = Vector2( 150, 0 )
+scale = Vector2( 1.25, 2 )
+texture = ExtResource( 4 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="O" type="Sprite" parent="Game Over" index="4"]
+
+position = Vector2( 210, 0 )
+scale = Vector2( 1.25, 2 )
+texture = ExtResource( 5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="v" type="Sprite" parent="Game Over" index="5"]
+
+position = Vector2( 255, 0 )
+scale = Vector2( 1.25, 2 )
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="final e" type="Sprite" parent="Game Over" index="6"]
+
+position = Vector2( 292, 0 )
+scale = Vector2( 1.25, 2 )
+texture = ExtResource( 4 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="r" type="Sprite" parent="Game Over" index="7"]
+
+position = Vector2( 327, 0 )
+scale = Vector2( 1.25, 2 )
+texture = ExtResource( 7 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Play" type="Button" parent="." index="1"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 200.0
+margin_top = 210.0
+margin_right = 531.0
+margin_bottom = 309.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = false
+align = 1
+script = ExtResource( 8 )
+
+[node name="T" type="Sprite" parent="Play" index="0"]
+
+position = Vector2( 30, 50 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 9 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="r" type="Sprite" parent="Play" index="1"]
+
+position = Vector2( 63, 50 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 7 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="y" type="Sprite" parent="Play" index="2"]
+
+position = Vector2( 100, 50 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 10 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="A" type="Sprite" parent="Play" index="3"]
+
+position = Vector2( 155, 50 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 11 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="g" type="Sprite" parent="Play" index="4"]
+
+position = Vector2( 198, 50 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 12 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="a" type="Sprite" parent="Play" index="5"]
+
+position = Vector2( 238, 50 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="i" type="Sprite" parent="Play" index="6"]
+
+position = Vector2( 268, 50 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 13 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="n" type="Sprite" parent="Play" index="7"]
+
+position = Vector2( 298, 50 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 14 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Quit" type="Button" parent="." index="2"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 658.0
+margin_top = 209.0
+margin_right = 816.0
+margin_bottom = 309.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = false
+align = 1
+script = ExtResource( 8 )
+
+[node name="Q" type="Sprite" parent="Quit" index="0"]
+
+position = Vector2( 30, 50 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 15 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="u" type="Sprite" parent="Quit" index="1"]
+
+position = Vector2( 75, 50 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 16 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="i" type="Sprite" parent="Quit" index="2"]
+
+position = Vector2( 110, 50 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 13 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="t" type="Sprite" parent="Quit" index="3"]
+
+position = Vector2( 137, 50 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 17 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Main Menu" type="Button" parent="." index="3"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 324.0
+margin_top = 376.0
+margin_right = 532.0
+margin_bottom = 468.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = false
+align = 1
+script = ExtResource( 8 )
+
+[node name="M" type="Sprite" parent="Main Menu" index="0"]
+
+position = Vector2( 40, 55 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 18 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="e" type="Sprite" parent="Main Menu" index="1"]
+
+position = Vector2( 90, 55 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 4 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="n" type="Sprite" parent="Main Menu" index="2"]
+
+position = Vector2( 130, 55 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 14 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="u" type="Sprite" parent="Main Menu" index="3"]
+
+position = Vector2( 175, 55 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 16 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Controls" type="Button" parent="." index="4"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 657.0
+margin_top = 376.0
+margin_right = 949.0
+margin_bottom = 466.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = false
+align = 1
+script = ExtResource( 8 )
+
+[node name="C" type="Sprite" parent="Controls" index="0"]
+
+position = Vector2( 30, 50 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 19 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="o" type="Sprite" parent="Controls" index="1"]
+
+position = Vector2( 70, 50 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 20 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="n" type="Sprite" parent="Controls" index="2"]
+
+position = Vector2( 110, 50 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 14 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="t" type="Sprite" parent="Controls" index="3"]
+
+position = Vector2( 146, 50 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 17 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="r" type="Sprite" parent="Controls" index="4"]
+
+position = Vector2( 177, 50 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 7 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Final o" type="Sprite" parent="Controls" index="5"]
+
+position = Vector2( 210, 50 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 20 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="l" type="Sprite" parent="Controls" index="6"]
+
+position = Vector2( 240, 50 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 21 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="s" type="Sprite" parent="Controls" index="7"]
+
+position = Vector2( 265, 50 )
+scale = Vector2( 1.25, 1.75 )
+texture = ExtResource( 22 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="controls box" type="RichTextLabel" parent="." index="5"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 54.0
+margin_top = 369.0
+margin_right = 280.0
+margin_bottom = 555.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "Controls: To accelerate use the UP arrow or W key, to turn the ship use the LEFT and RIGHT arrows or A and D keys, to fire press the spacebar"
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "custom_colors" ]
+
+[node name="theme" type="AudioStreamPlayer" parent="." index="6"]
+
+stream = ExtResource( 23 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+script = ExtResource( 24 )
+
+[node name="score" type="LineEdit" parent="." index="7"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 481.0
+margin_top = 148.0
+margin_right = 605.0
+margin_bottom = 172.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+script = ExtResource( 25 )
+
+[connection signal="pressed" from="Play" to="Play" method="_on_Play_pressed"]
+
+[connection signal="pressed" from="Quit" to="Quit" method="_on_Quit_pressed"]
+
+[connection signal="pressed" from="Main Menu" to="Main Menu" method="_on_Main_Menu_pressed"]
+
+[connection signal="pressed" from="Controls" to="Controls" method="_on_Controls_pressed"]
+
+[connection signal="finished" from="theme" to="theme" method="_on_theme_finished"]
+
+
